@@ -120,8 +120,11 @@ int main(){
 				printf("moi ban nhap luong phan tu va gia tri tung phan tu trong mang truoc!!!\n");
 				break;
 			}
+			printf("moi nhap so muon tim: ");
+			scanf("%d",&number);
 			for( i = 0; i < n; i++){
 				if(array[i] = number){
+					flag = 1;
 					printf("so %d tai array[%d]",number,i);
 				}
 			}
@@ -175,3 +178,4 @@ int main(){
 	}while(1);
 	return 0;
 }
+
