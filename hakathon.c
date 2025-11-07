@@ -13,7 +13,7 @@ int main(){
 		printf("|6.  Xoa phan tu tai mot vi tri cu the                                                                                |\n");
 		printf("|7.  Sap xep mang theo thu tu tang dan                                                                                |\n");
 		printf("|8.  Tim kiem va hien thi vi tri cua mot phan tu                                                                      |\n");
-		printf("|9.  In ra toan bo so nguyen to                                                                                        |\n");
+		printf("|9.  In ra toan bo so nguyen to                                                                                       |\n");
 		printf("|10. sap xep mang theo thu tu tang dan                                                                                |\n");
 		printf("+---------------------------------------------------------------------------------------------------------------------+\n");
 		printf("moi ban nhap lua chon: ");
@@ -123,9 +123,9 @@ int main(){
 			printf("moi nhap so muon tim: ");
 			scanf("%d",&number);
 			for( i = 0; i < n; i++){
-				if(array[i] = number){
+				if(array[i] == number){
 					flag = 1;
-					printf("so %d tai array[%d]",number,i);
+					printf("so %d tai array[%d]\n",number,i);
 				}
 			}
 			if(flag == 0){
@@ -134,6 +134,10 @@ int main(){
 			printf("\n");	
 			break;
 			case 9:
+			if(n == 0){
+				printf("moi ban nhap luong phan tu va gia tri tung phan tu trong mang truoc!!!\n");
+				break;
+			}
     			for (int i = 0; i < n; i++) {
         			int found = 1;
         	if (array[i] < 2){
